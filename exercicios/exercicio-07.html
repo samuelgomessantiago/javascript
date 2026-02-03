@@ -6,25 +6,62 @@
     <title>Testando conhecimento</title>
 </head>
 <body>
-    <h1>PROGRAMA NÃO MENTE</h1>
-
+    <h1>JavaScrip</h1>
+    <p>Curso de JavaScript</p>
+    <p class="paragrafo">Apredendo a usar o <strong> DOM</strong> em JavaScript</p>
+    <div name = "cliqui"> Cliqui aqui </div>
+    <a id = "mensagem" href="#">BOTÃO</a><br>
+    <h2 class="titulo">Olá mundo</h2>
+    <h2 id="titulo_dois">Estou livre</h2>
     <script>
-                alert('Olá')
-        confirm('Aceita cocks?')
+        /*
+        var titulo = document.getElementsByTagName('h1')[0]
+        var p2 = document.getElementsByTagName('p')[0]
+        var caixa = document.getElementsByTagName('div')[0]
+        p2.style.color = "green"
+        titulo.style.color = "red"
+        caixa.style.fontSize = "30px"
+        */
 
-        var NOME = prompt('Qual é o seu nome?')
-        alert(`Tudo bem ${NOME}`)
+        /*Selecionando a pagina completa, para aplicar configurações na tela inteira*/
+        var corpo = document.body
+        corpo.style.margin = "30px"
 
-        var IDADE = prompt('Quantos anos você tem?')
-        alert(`Você tem ${IDADE} anos`)
+        /*Selecionando por clase um paragrafo usando o comando "getElementsByClassName"*/
+        var pr = document.getElementsByClassName("paragrafo")[0]
+        pr.innerText = "Esse é o botão em JavaScript!!!"
 
-        var N1 = Number(prompt('Digite um número:'))
-        var N2 = Number(prompt('Digite o segundo número:'))
-        var SOMA = N1 + N2
-        alert(`${N1} + ${N2} = ${SOMA}`)
+        /*Selecionando por nome, a div usando o elemento "getElementsByName"*/
+        var apertar = document.getElementsByName("cliqui")[0]
+        apertar.style.display = "none"
 
-        var LINDO = prompt(`Você se acha bonito? sim ou não`)
-        alert(LINDO == "não" ? "VOCÊ É LINDO!!" : "CONCORDO")
+        /*Selecionando por marca a tag "a" usando o elemento "getElementsByTagName"*/
+        var link = document.getElementsByTagName("a")[0]
+        link.style.display = "flex"
+        link.style.borderRadius = "15px"
+        link.style.borderColor = "black"
+        link.style.color = "white"
+        link.style.width = "200px"
+        link.style.height = "25px"
+
+        link.innerText = "Olá!"
+
+        /*Selecionando por ID a tag "a" usando o elemento "getElementById"*/
+        var m1 = document.getElementById("mensagem")
+        
+        m1.style.backgroundColor = "green"
+        m1.style.padding = "10px"
+        m1.style.textDecoration = "none"
+        m1.style.justifyContent= "center"
+        m1.style.fontSize = "20px"
+
+        /*Também consigo selecionar qualquer tag usando o elemento "querySelector" lembrando se a tag for identificada por "claas" vai ser o nome da tag (ponto) o nome da class exemplo:  h2.titulo 
+        Se for ID exemplo: h2#titulo*/
+        var ti = document.querySelector("h2.titulo")
+        ti.style.color = "green"
+
+        var tu = document.querySelector("h2#titulo_dois")
+        tu.style.color = "red"
     </script>
 </body>
 </html>
