@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+
+    <Div class="c1">
+        <a id = "link" href="#">ENTRAR</a>
+    </Div>
+
+    <script>
+
+        var corpo = document.body
+        corpo.style.backgroundColor = "#B2DC53"
+        corpo.style.margin = "0"
+        corpo.style.height = "100vh"
+
+        var titulo_01 = document.getElementsByTagName('h1')[0]
+        titulo_01.style.display = "flex"
+        titulo_01.style.justifyContent = "center"
+        titulo_01.style.fontFamily = "arial"
+        titulo_01.style.backgroundColor = "#6BDBBE"
+        titulo_01.style.margin = "0"
+        titulo_01.style.padding = "20px"
+        titulo_01.style.color = "black"
+
+        var caixa = document.getElementsByClassName('c1')[0]
+        caixa.style.display = "flex"
+        caixa.style.justifyContent = "center"
+        caixa.style.padding = "20px"
+        caixa.style.margin = "10px"
+
+
+        var botao = document.getElementById('link')
+        botao.style.display = "flex"
+        botao.style.margin = "10px"
+        botao.style.textDecoration = "none"
+        botao.style.backgroundColor = "red"
+        botao.style.width = "130px"
+        botao.style.height = "40px"
+        botao.style.alignItems = "center"
+        botao.style.justifyContent = "center"
+        botao.style.fontSize = "20px"
+        botao.style.color = "white"
+        botao.style.borderRadius = "35px"
+    </script>
+</body>
+</html>
